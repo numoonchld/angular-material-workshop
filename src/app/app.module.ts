@@ -12,12 +12,13 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatCardModule, MatGridListModule, MatMenuModule
+  MatCardModule, MatGridListModule, MatMenuModule, MatTreeModule
 } from '@angular/material';
 import { FirstPageComponent } from './components/first-page/first-page.component';
 import { SecondPageComponent } from './components/second-page/second-page.component';
 import { ThirdPageComponent } from './components/third-page/third-page.component';
 import { MatDashComponent } from './components/mat-dash/mat-dash.component';
+import { TreeComponent } from './components/tree/tree.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatDashComponent } from './components/mat-dash/mat-dash.component';
     FirstPageComponent,
     SecondPageComponent,
     ThirdPageComponent,
-    MatDashComponent
+    MatDashComponent,
+    TreeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { MatDashComponent } from './components/mat-dash/mat-dash.component';
     MatListModule,
     MatCardModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
