@@ -6,10 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavSysComponent } from './components/nav-sys/nav-sys.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { FirstPageComponent } from './first-page/first-page.component';
-import { SecondPageComponent } from './second-page/second-page.component';
-import { ThirdPageComponent } from './third-page/third-page.component';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatCardModule, MatGridListModule, MatMenuModule
+} from '@angular/material';
+import { FirstPageComponent } from './components/first-page/first-page.component';
+import { SecondPageComponent } from './components/second-page/second-page.component';
+import { ThirdPageComponent } from './components/third-page/third-page.component';
+import { MatDashComponent } from './components/mat-dash/mat-dash.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +26,8 @@ import { ThirdPageComponent } from './third-page/third-page.component';
     NavSysComponent,
     FirstPageComponent,
     SecondPageComponent,
-    ThirdPageComponent
+    ThirdPageComponent,
+    MatDashComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +38,10 @@ import { ThirdPageComponent } from './third-page/third-page.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
